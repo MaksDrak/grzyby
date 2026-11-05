@@ -627,6 +627,10 @@ p { margin: 0 0 1em; }
   max-width: 280px;
   margin: 0.4em 0 1.2em 1.5em;
 }
+.post-content .post-image:nth-of-type(even) {
+  float: left;
+  margin: 0.4em 1.5em 1.2em 0;
+}
 .post-content .post-image img {
   width: 100%;
   height: auto;
@@ -639,7 +643,7 @@ p { margin: 0 0 1em; }
 }
 .post-content h2 { font-size: 26px; margin-top: 1.6em; }
 .post-content h3 { font-size: 20px; margin-top: 1.4em; }
-.post-content p { color: var(--ink); font-size: 16.5px; text-align: justify; }
+.post-content p { color: var(--ink); font-size: 16.5px; text-align: justify; hyphens: auto; }
 .post-content ul, .post-content ol { padding-left: 22px; margin-bottom: 1.2em; }
 .post-content li { margin-bottom: 8px; }
 .post-content blockquote {
@@ -858,7 +862,7 @@ p { margin: 0 0 1em; }
   .main-nav.open { transform: translateY(0); }
   .nav-toggle { display: block; }
   .hero h1 { font-size: 32px; }
-  .post-content .post-image { float: none; width: 100%; max-width: none; margin: 1.8em 0; }
+  .post-content .post-image, .post-content .post-image:nth-of-type(even) { float: none; width: 100%; max-width: none; margin: 1.8em 0; }
   .post-card .thumb { aspect-ratio: 16/9; }
   .post-card .body { padding: 22px; }
   .value-grid { grid-template-columns: 1fr; }
